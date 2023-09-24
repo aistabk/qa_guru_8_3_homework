@@ -10,4 +10,4 @@ def test_results_ok(browser_size):
 def test_results_not_ok(browser_size):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('uegiu iuerj iuejrh dfuierjkdb ').press_enter()
-    browser.element('[id="result-stats"]').should(have.text('Результатов не обнаружено'))
+    browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
